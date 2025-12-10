@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Primate & Hominin Evolution Timeline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1>Primate & Hominin Evolution Timeline</h1>
+      <p class="tagline">
+        From early primates to <em>Homo sapiens</em> — an interactive Unessay for APY203.
+      </p>
+    </div>
+  </header>
 
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Why a Timeline?</h2>
+        <p>
+          Human evolution did not happen in a straight line from “ape” to “human.”
+          Instead, it is a branching process that unfolds over tens of millions of years.
+          This website visualizes key moments in primate and hominin evolution, showing
+          how anatomical, behavioral, and ecological changes accumulate over deep time.
+        </p>
+        <p>
+          Scroll horizontally through the timeline below and click on each card to see
+          detailed explanations that connect fossils, anatomy, and environment.
+        </p>
+        <p class="hint">
+          Tip: use your trackpad, mouse wheel (shift + scroll), or swipe left/right on mobile.
+        </p>
+      </div>
+    </section>
+
+    <!-- Timeline + Detail Panel -->
+    <section class="timeline-layout">
+      <div class="timeline-header">
+        <span class="timeline-label">55 million years ago</span>
+        <div class="timeline-line"></div>
+        <span class="timeline-label">Present</span>
+      </div>
+
+      <div class="timeline-and-detail">
+        <!-- Horizontal timeline strip -->
+        <div class="timeline-strip" id="timeline-strip">
+          <!-- Each .event-card is one clickable node on the timeline -->
+          <button class="event-card active" data-id="early-primates">
+            <span class="event-year">55–50 MYA</span>
+            <span class="event-title">Early Primates</span>
+            <span class="event-label">Tree-dwelling ancestors</span>
+          </button>
+
+          <button class="event-card" data-id="early-apes">
+            <span class="event-year">23–16 MYA</span>
+            <span class="event-title">Early Apes</span>
+            <span class="event-label">Tailless primates</span>
+          </button>
+
+          <button class="event-card" data-id="sahelanthropus">
+            <span class="event-year">~7 MYA</span>
+            <span class="event-title"><em>Sahelanthropus</em></span>
+            <span class="event-label">Possible early hominin</span>
+          </button>
+
+          <button class="event-card" data-id="ardipithecus">
+            <span class="event-year">4.4 MYA</span>
+            <span class="event-title"><em>Ardipithecus ramidus</em></span>
+            <span class="event-label">“Ardi” and mixed locomotion</span>
+          </button>
+
+          <button class="event-card" data-id="afarensis">
+            <span class="event-year">3.2 MYA</span>
+            <span class="event-title"><em>A. afarensis</em></span>
+            <span class="event-label">“Lucy” & bipedalism</span>
+          </button>
+
+          <button class="event-card" data-id="homo-habilis">
+            <span class="event-year">2.5–1.8 MYA</span>
+            <span class="event-title"><em>Homo habilis</em></span>
+            <span class="event-label">Tool-using early Homo</span>
+          </button>
+
+          <button class="event-card" data-id="homo-erectus">
+            <span class="event-year">1.8 MYA–300 KYA</span>
+            <span class="event-title"><em>Homo erectus</em></span>
+            <span class="event-label">Long-distance walker</span>
+          </button>
+
+          <button class="event-card" data-id="archaic-humans">
+            <span class="event-year">300–30 KYA</span>
+            <span class="event-title">Archaic Humans</span>
+            <span class="event-label">Neanderthals & others</span>
+          </button>
+
+          <button class="event-card" data-id="homo-sapiens">
+            <span class="event-year">200 KYA–Present</span>
+            <span class="event-title"><em>Homo sapiens</em></span>
+            <span class="event-label">Symbolic thinkers</span>
+          </button>
+        </div>
+
+        <!-- Detail panel that updates when you click a card -->
+        <article class="detail-panel" id="detail-panel">
+          <!-- Content will be inserted by script.js -->
+        </article>
+      </div>
+    </section>
+
+    <!-- Reflection / Course Connection -->
+    <section class="reflection">
+      <h2>How this timeline connects to biological anthropology</h2>
+      <p>
+        This timeline is not just a list of names and dates. It highlights patterns
+        that are central to biological anthropology:
+      </p>
+      <ul>
+        <li>
+          <strong>Adaptation:</strong> changes in locomotion, teeth, and brain size reflect
+          adaptation to new environments and diets.
+        </li>
+        <li>
+          <strong>Phylogeny:</strong> humans are nested within the primate order, and our
+          closest relatives are African apes, not “less evolved humans.”
+        </li>
+        <li>
+          <strong>Mosaic evolution:</strong> traits like bipedalism, tool use, and big brains
+          do not evolve all at once but in different combinations across species.
+        </li>
+        <li>
+          <strong>Deep time:</strong> the scale of millions of years challenges our everyday
+          sense of time and shows how gradual change can produce dramatic differences.
+        </li>
+      </ul>
+      <p>
+        As an Unessay, this website uses design, interaction, and visual structure to
+        communicate the logic of human evolution rather than relying only on a traditional
+        written essay.
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p>Unessay Project for APY203 — Human Evolution Timeline Website</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
